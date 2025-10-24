@@ -4,117 +4,103 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Deals Hunter</title>
-  <meta name="description" content="Top Amazon Kitchen & Dining Deals curated by Deals Hunter">
+  <meta name="description" content="Curated Amazon Kitchen & Dining links by Deals Hunter – simple, fast, accurate.">
   <meta name="theme-color" content="#0b1220">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #0b1220;
-      color: #f9fafb;
+    :root {
+      --bg: #0b1220;     /* page bg */
+      --panel: #0f172a;  /* cards */
+      --text: #e5e7eb;   /* primary text */
+      --muted: #94a3b8;  /* secondary text */
+      --brand: #fbbf24;  /* accent */
     }
-
+    *{box-sizing:border-box}
+    body { margin: 0; font-family: 'Inter', system-ui, sans-serif; background-color: var(--bg); color: var(--text); }
     header {
-      width: 100%;
-      background: linear-gradient(90deg, #0b1220, #1e293b);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 25px 0;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
-      position: sticky;
-      top: 0;
-      z-index: 10;
+      width: 100%; background: linear-gradient(90deg, #0b1220, #1e293b);
+      display: flex; align-items: center; justify-content: center;
+      padding: 14px 0; box-shadow: 0 2px 6px rgba(0,0,0,0.4); position: sticky; top: 0; z-index: 10;
     }
-
-    header img {
-      position: absolute;
-      left: 20px;
-      width: 90px;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    header h1 {
-      font-size: 42px;
-      font-weight: 800;
-      color: #fbbf24;
-      margin: 0;
-      text-shadow: 0 0 8px rgba(251,191,36,0.6);
-      letter-spacing: 1px;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .category {
-      font-size: 24px;
-      font-weight: 700;
-      color: #fbbf24;
-      margin-bottom: 20px;
-    }
-
-    .product-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .product-list li {
-      margin-bottom: 18px;
-      font-size: 18px;
-    }
-
-    .product-list a {
-      color: #f9fafb;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .product-list a:hover {
-      color: #fbbf24;
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 14px;
-      color: #94a3b8;
-      margin: 60px 0 30px;
-    }
+    header img { position: absolute; left: 20px; width: 56px; height: 56px; object-fit: contain; border-radius: 8px }
+    header h1 { font-size: 26px; font-weight: 800; color: var(--brand); margin: 0; text-shadow: 0 0 6px rgba(251,191,36,0.35); letter-spacing:.2px }
+    main { max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.65; }
+    .category { font-size: 22px; font-weight: 800; color: var(--brand); margin-bottom: 16px }
+    .product-list { list-style: none; padding: 0; margin: 0 }
+    .product-list li { margin-bottom: 16px; font-size: 16px; background: var(--panel); border: 1px solid rgba(255,255,255,.06); border-radius: 12px; padding: 12px 14px }
+    .bullet { margin-right: 8px }
+    .product-list a { color: var(--brand); text-decoration: none; font-weight: 700 }
+    .product-list a:hover { text-decoration: underline }
+    .hint { font-size: 12px; color: var(--muted); margin-top: 8px }
+    footer { text-align: center; font-size: 13px; color: var(--muted); margin: 48px 0 30px }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="logo.png" alt="Deals Hunter Logo">
+    <!-- Coloque um arquivo logo.png no repositório -->
+    <img src="logo.png" alt="Deals Hunter Logo" />
     <h1>Deals Hunter</h1>
   </header>
 
   <main>
-    <div class="category">🍽️ <strong>Kitchen & Dining</strong></div>
+    <div class="category">🍽️ <strong>Kitchen &amp; Dining</strong></div>
     <ul class="product-list">
-      <li>⭐ <a href="https://www.amazon.com/dp/B078NN17K3?tag=inovacao08-20" target="_blank">Ninja Professional Blender</a></li>
-      <li>⭐ <a href="https://www.amazon.com/dp/B07FDJMC9Q?tag=inovacao08-20" target="_blank">Instant Pot Duo 7-in-1</a></li>
-      <li>⭐ <a href="https://www.amazon.com/dp/B0FKBHBC6N?tag=inovacao08-20" target="_blank">Cast Iron Skillet Set</a></li>
-      <li>⭐ <a href="https://www.amazon.com/dp/B0FFTLNC5S?tag=inovacao08-20" target="_blank">Air Fryer XL 8Qt</a></li>
-      <li>⭐ <a href="https://www.amazon.com/dp/B003OAJGJO?tag=inovacao08-20" target="_blank">Electric Kettle Stainless Steel</a></li>
-      <li>⭐ <a href="https://www.amazon.com/dp/B07F9PH82Z?tag=inovacao08-20" target="_blank">Nonstick Cookware Set</a></li>
-      <li>⭐ <a href="https://www.amazon.com/dp/B0DDKS56SB?tag=inovacao08-20" target="_blank">Digital Kitchen Scale</a></li>
-      <li>⭐ <a href="https://www.amazon.com/dp/B0DQG2VHKJ?tag=inovacao08-20" target="_blank">Glass Food Storage Containers</a></li>
-      <li>⭐ <a href="https://www.amazon.com/dp/B0CSPKSCP2?tag=inovacao08-20" target="_blank">Electric Wine Opener</a></li>
-      <li>⭐ <a href="https://www.amazon.com/dp/B07HRRV96C?tag=inovacao08-20" target="_blank">Coffee Maker 12-Cup</a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B078NN17K3?tag=inovacao08-20" target="_blank"><strong>Keurig K‑Elite Single Serve K‑Cup Coffee Maker (Brushed Slate)</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B07FDJMC9Q?tag=inovacao08-20" target="_blank"><strong>Ninja Air Fryer 4‑Qt (AF101)</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0FKBHBC6N?tag=inovacao08-20" target="_blank"><strong>Washable 4‑Piece Kitchen Floor Mats</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0FFTLNC5S?tag=inovacao08-20" target="_blank"><strong>Owala FreeSip Insulated Stainless Steel Water Bottle (24oz)</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B003OAJGJO?tag=inovacao08-20" target="_blank"><strong>Crock‑Pot 7‑Quart Oval Manual Slow Cooker (SCV700‑S‑BR)</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B07F9PH82Z?tag=inovacao08-20" target="_blank"><strong>Antarctic Star 26‑Bottle / 130‑Can Wine &amp; Beverage Cooler (3.2 cu.ft)</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0DDKS56SB?tag=inovacao08-20" target="_blank"><strong>ChangBERT Portable Induction Cooktop</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0DQG2VHKJ?tag=inovacao08-20" target="_blank"><strong>Titanium Cutting Board (16&quot;×11&quot;)</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0CSPKSCP2?tag=inovacao08-20" target="_blank"><strong>Winisok Silicone Under‑Sink Mat (34&quot;×22&quot;)</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B07HRRV96C?tag=inovacao08-20" target="_blank"><strong>M MCIRCO Glass Meal Prep Containers, 10‑Pack (22 oz)</strong></a></li>
+    </ul>
+
+    <div class="category" style="margin-top:32px;">💻 <strong>Electronics</strong></div>
+    <ul class="product-list">
+      <li>⭐ <a href="https://www.amazon.com/dp/B0D54JZTHY?tag=inovacao08-20" target="_blank"><strong>Apple AirTag (4‑Pack)</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0DCH8VDXF?tag=inovacao08-20" target="_blank"><strong>Apple EarPods with USB‑C Plug</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0DGHMNQ5Z?tag=inovacao08-20" target="_blank"><strong>Apple AirPods 4 Wireless Earbuds</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0FQFB8FMG?tag=inovacao08-20" target="_blank"><strong>Apple AirPods Pro 3 Wireless Earbuds</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B09B8V1LZ3?tag=inovacao08-20" target="_blank"><strong>Echo Dot (5th Gen) Smart Speaker | Charcoal</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B09WNK39JN?tag=inovacao08-20" target="_blank"><strong>Echo Pop | Compact Smart Speaker with Alexa</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0BP9SNVH9?tag=inovacao08-20" target="_blank"><strong>Fire TV Stick 4K Max (Wi‑Fi 6E)</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0DGQZ8JZK?tag=inovacao08-20" target="_blank"><strong>Blink Video Doorbell + Sync Module (Included)</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0F19KLHG3?tag=inovacao08-20" target="_blank"><strong>INSIGNIA 50&quot; Class F50 Series 4K UHD Smart Fire TV</strong></a></li>
+    </ul>
+
+    <div class="category" style="margin-top:32px;">💅 <strong>Clothing &amp; Beauty</strong></div>
+    <ul class="product-list">
+      <li>⭐ <a href="https://www.amazon.com/dp/B0DQB7KZ3F?tag=inovacao08-20" target="_blank"><strong>Hanes EcoSmart Hoodie, Midweight Fleece Pullover</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0CYZTNNTR?tag=inovacao08-20" target="_blank"><strong>ANRABESS Women Long Sleeve Rib‑Knit Slim Fit Top</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0CLH53WVN?tag=inovacao08-20" target="_blank"><strong>Hanes Men’s EcoSmart Fleece Sweatshirt (Crewneck)</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B09JFMBWJX?tag=inovacao08-20" target="_blank"><strong>J.VER Men’s Dress Shirt, Long Sleeve Stretch, Wrinkle‑Free</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0BVF978MV?tag=inovacao08-20" target="_blank"><strong>SINOPHANT High Waisted Leggings for Women</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0F99ZZRJY?tag=inovacao08-20" target="_blank"><strong>Hanes Men’s Beefy‑T T‑Shirt, Heavyweight Cotton</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0D61JDZ31?tag=inovacao08-20" target="_blank"><strong>SZIVYSHI Corset Tops for Women, Bustier Shapewear</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0BW92334B?tag=inovacao08-20" target="_blank"><strong>Trendy Queen Women’s Long Sleeve Cropped Tee</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0CGB1GDSK?tag=inovacao08-20" target="_blank"><strong>KIDMI Genuine Suede Clogs for Women (Cork Footbed)</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0FVSZNL7M?tag=inovacao08-20" target="_blank"><strong>WIHOLL Women’s Lightweight Long Sleeve Sweater</strong></a></li>
+    </ul>
+
+    <div class="category" style="margin-top:32px;">🚗 <strong>Automotive</strong></div>
+    <ul class="product-list">
+      <li>⭐ <a href="https://www.amazon.com/dp/B016NA9V78?tag=inovacao08-20" target="_blank"><strong>Rain‑X Latitude 2‑in‑1 Water Repellent Wiper Blade (22")</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0C1Y8Z6VT?tag=inovacao08-20" target="_blank"><strong>Kaistyle MagSafe Car Mount (20 Strong Magnets)</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B00J00X5YO?tag=inovacao08-20" target="_blank"><strong>Mobil 1 Advanced Fuel Economy Full Synthetic Motor Oil 0W‑20 (5 Qt)</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B084RQKLV8?tag=inovacao08-20" target="_blank"><strong>CERAKOTE Ceramic Headlight Restoration Kit</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B015TKUPIC?tag=inovacao08-20" target="_blank"><strong>NOCO Boost GB40 1000A UltraSafe Jump Starter (12V)</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B071ZTPRJL?tag=inovacao08-20" target="_blank"><strong>Chemical Guys Total Interior Cleaner &amp; Protectant</strong></a></li>
+      <li>⭐ <a href="https://www.amazon.com/dp/B0DL5K9HND?tag=inovacao08-20" target="_blank"><strong>Termitor 9005/HB3 LED Headlight Bulbs</strong></a></li>
     </ul>
   </main>
 
   <footer>
-    <p>Deals Hunter © 2025<br>
-    Don’t waste your time searching — we do it for you, totally free!</p>
+    <p>As an Amazon Associate, I earn from qualifying purchases.</p>
+    <p>© 2025 Deals Hunter — Don't waste your time searching, we do it for you. Totally free.</p>
   </footer>
-
 </body>
 </html>
